@@ -34,12 +34,12 @@ try {
 const PORT = process.env.PORT || 8445;
 
 // Wit.ai parameters
-const WIT_TOKEN = process.env.WIT_TOKEN || "ISO5VCEHIIYCMCWNGOPOMF74BWGP7OCQ";
+const WIT_TOKEN = process.env.WIT_TOKEN ;
 
 // Messenger API parameters
-const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN || "EAAHvgEjIID0BAJHSzGKh3zqNOu1t16mKbjrrlXUOmsIrFl5zLJLg0qdCaMXlYscw873YYvfTgotZBRPnwgEnEbzivDDYySOqRQ4bilDZAt72KPwsvEpYW6eODYYzoupW5pwE0yIY2vIoA2oZAofkV1T2gbnVlWu5T0BIpOWDAZDZD"; 
+const FB_PAGE_TOKEN = process.env.FB_PAGE_TOKEN ; 
 if (!FB_PAGE_TOKEN) { throw new Error('missing FB_PAGE_TOKEN') }
-const FB_APP_SECRET = process.env.FB_APP_SECRET || "07fded0e01c3a196de58345a4f911c8d";
+const FB_APP_SECRET = process.env.FB_APP_SECRET ;
 if (!FB_APP_SECRET) { throw new Error('missing FB_APP_SECRET') }
 
 let FB_VERIFY_TOKEN = null;
